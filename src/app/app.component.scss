@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: row;
+
+    &__list {
+        padding: 10px;
+        border: 1px solid black;
+        flex: 0.4;
+    }
+    &__details{
+        padding: 10px;
+        margin-left: 4px;
+        border: 1px solid black;
+        flex: 0.6;
+        display: flex;
+        flex-direction: column;
+
+        &__services {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-between;
+
+            &__publishers{
+
+                border: 1px solid black;
+            }
+
+            &__subscribers{
+                border: 1px solid black;
+
+            }
+        }
+        &__schemas {
+            align-self: stretch;
+            border: 1px solid black;
+        }
+    }
+}
