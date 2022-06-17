@@ -1,40 +1,51 @@
 .container{
     display: flex;
     flex-direction: row;
+    height: 100vh;
+    width: 100vw;
 
     &__list {
         padding: 10px;
-        border: 1px solid black;
-        flex: 0.4;
+        flex: 0.2;
+        overflow-y: auto;
     }
     &__details{
         padding: 10px;
         margin-left: 4px;
-        border: 1px solid black;
-        flex: 0.6;
+        flex: 0.8;
         display: flex;
         flex-direction: column;
 
         &__services {
-            border: 1px solid black;
+            flex: 0.6;
             display: flex;
             flex-direction: row;
             align-items: stretch;
             justify-content: space-between;
 
             &__publishers{
-
-                border: 1px solid black;
+                & > h4 {
+                    text-align: center;
+                }
+                flex: 0.5;
+                overflow-y: auto;
             }
 
             &__subscribers{
-                border: 1px solid black;
-
+                & > h4 {
+                    text-align: center;
+                }
+                flex: 0.5;
+                overflow-y: auto;
             }
         }
         &__schemas {
-            align-self: stretch;
-            border: 1px solid black;
+            flex: 0.4;
+            overflow-y: auto;
+
+            & > h4 {
+                text-align: center;
+            }
         }
     }
 }
